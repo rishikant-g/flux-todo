@@ -18,7 +18,8 @@ class TaskController extends ApiController
     {
         // $allTasks = Task::get();
         // return $allTasks->toArray();
-        $allTasks = Task::when(request('search', null), function($query) {
+        $userId = $request->user()?->id;
+        $allTasks = Task::where(['user_id' => $userId])->when(request('search', null), function($query) {
             return $query->where('title', 'like', "%". request('search') . "%");
         })
         ->when(request('sort_by', null), function ($q) {

@@ -44,6 +44,15 @@ const TaskPageWrapper: React.FC = () => {
     }
   }, [isLoading, isSuccessTaskList, data]);
 
+  useEffect(() => {
+    dispatch({
+      type: "UPDATE_FIELDS",
+      payload: {
+        selectedTaskList: {},
+      },
+    });
+  }, [sortBy]);
+
   return (
     <>
       <div className="container mt-5">

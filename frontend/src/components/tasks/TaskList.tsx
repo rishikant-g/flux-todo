@@ -76,6 +76,15 @@ const TaskList: React.FC = () => {
     }
   }, [isLoading, isFetching, isSuccessTaskList]);
 
+  useEffect(() => {
+    dispatch({
+      type: "UPDATE_FIELDS",
+      payload: {
+        selectedTaskList: {},
+      },
+    });
+  }, [showModal]);
+
   return (
     <Container className="mt-5 ">
       {isLoading && <Loader />}
