@@ -47,7 +47,10 @@ const Login = () => {
     <>
       {isPending && <Loader />}
       <div className="container">
-        <div className="row justify-content-center align-items-center" style={{minHeight: '85vh'}}>
+        <div
+          className="row justify-content-center align-items-center"
+          style={{ minHeight: "85vh" }}
+        >
           <div className="col-md-12 ">
             <h1 className="text-center mb-5">
               <span>Log in to your</span> ToDo account.
@@ -121,9 +124,9 @@ const Login = () => {
                           />
                         )}
                       />
-                      {errors?.email?.message && (
+                      {errors?.password?.message && (
                         <Form.Control.Feedback type="invalid">
-                          {errors?.email?.message}
+                          {errors?.password?.message}
                         </Form.Control.Feedback>
                       )}
                     </Form.Group>
