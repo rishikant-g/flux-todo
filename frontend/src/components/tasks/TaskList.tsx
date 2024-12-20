@@ -81,6 +81,7 @@ const TaskList: React.FC = () => {
       type: "UPDATE_FIELDS",
       payload: {
         selectedTaskList: {},
+        isOpenSubTask: false,
       },
     });
   }, [showModal]);

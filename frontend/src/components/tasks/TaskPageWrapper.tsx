@@ -49,9 +49,10 @@ const TaskPageWrapper: React.FC = () => {
       type: "UPDATE_FIELDS",
       payload: {
         selectedTaskList: {},
+        isOpenSubTask: false,
       },
     });
-  }, [sortBy]);
+  }, [sortBy, searchQuery]);
 
   return (
     <>
