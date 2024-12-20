@@ -101,6 +101,14 @@ const handleGlobalError = (response: any, errorFrom: string) => {
   if (response && response.status === 500) {
     Toast("Server error occured!", "error");
   }
+  if (response && response.status === 401) {
+    console.log("response>>.", response);
+    if (response?.data?.message) {
+      Toast(response.data.message, "error");
+    } else {
+      Toast("Server error occured!", "error");
+    }
+  }
 };
 
 export type Method =
