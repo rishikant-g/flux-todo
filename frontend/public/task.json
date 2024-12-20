@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "data": [
+    {
+      "title": "Group 1",
+      "tasks": [
+        {
+          "task_description": "Task 1 description",
+          "is_completed": true
+        },
+        {
+          "task_description": "Task 2 description",
+          "is_completed": false
+        }
+      ]
+    },
+    {
+      "title": "Group 2",
+      "tasks": [
+        {
+          "task_description": "Task 3 description",
+          "is_completed": true
+        }
+      ]
+    }
+  ]
+}
