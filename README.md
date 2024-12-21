@@ -32,4 +32,4 @@ Navigate for backend folder and run
 
 ### `php artisan migrate`
 
-### `php artisan run`
+### `php artisan serve`
