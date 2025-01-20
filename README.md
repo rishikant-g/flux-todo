@@ -10,7 +10,7 @@
 
 Navigate to fronend folder and run
 
-### `npm run install`
+### `npm install`
 
 To start the development server run
 
